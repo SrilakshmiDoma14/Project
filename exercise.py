@@ -9,7 +9,7 @@ while True:
     datetime_object = datetime.datetime.now()
 
     with open('/var/www/html/index.html', "w") as f:
-        f.write("<html><body>Hi from python, time: <b>{0}</b></p><br />".format(datetime_object))
+        f.write("<html><body>Hello from python, time: <b>{0}</b></p><br />".format(datetime_object))
         f.write("<p>from C: <b>{0}</b></p></body></html><br />".format(result))
 
     time.sleep(5)
